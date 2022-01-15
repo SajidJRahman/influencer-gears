@@ -19,13 +19,17 @@ influencer products & logos
 body{
     margin: 0px;
 }
-.first-container{
+.container{
+    margin: 120px;
+}
+#header-container{
     margin: 80px;
     margin-right: 120px;
     margin-left: 120px;
 }
-.container{
-    margin: 120px;
+#navigation-links{
+    display: flex;
+    justify-content: space-between;
 }
 .influencer-products{
     font-family: 'Poppins', sans-serif;
@@ -33,10 +37,6 @@ body{
     font-size: 24px;
     color: rgba(58, 58, 58, 1);
     margin: 0px;
-}
-.navigation-links{
-    display: flex;
-    justify-content: space-between;
 }
 .links{
     text-decoration: none;
@@ -46,24 +46,28 @@ body{
     font-weight: 600;
     color: rgba(58, 58, 58, 1);
 }
-.links-icon{
+#links-icon-one{
     width: 36px;
     height: 36px;
     margin-right: 34px;
     font-size: 25px;
     color: rgba(58, 58, 58, 1);
 }
-.links-icon-two{
+#links-icon-two{
     width: 36px;
     height: 36px;
     font-size: 25px;
     color: rgba(58, 58, 58, 1);
 }
-.influencer{
+
+/*--------------------
+ influencer part style
+ --------------------*/
+#influencer{
     display: flex;
     align-items: center;
 }
-.first-header{
+#influencer-header{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -71,7 +75,7 @@ body{
     color: rgba(58, 58, 58, 1);
     margin: 0px;
 }
-.first-paragraph{
+#influencer-paragraph{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -79,34 +83,36 @@ body{
     margin-top: 9px;
     margin-bottom: 30px;
 }
-.first-link{
+#influencer-link{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-weight: 900;
     font-size: 16px;
-    background-color: rgba(224, 44, 109, 1);
+    background-color: rgb(0, 166, 255);
     color: rgba(255, 255, 255, 1);
     padding: 10px 24px;
     border-radius: 41px;
 }
-.fas{
+.fas.fa-arrow-right{
     margin-left: 8px;
 }
-/*----
- logos
- ----*/
+
+/*----------
+ logos style
+ ----------*/
  hr{
      border: 1px solid rgb(228, 228, 228);
      margin: 35px;
  }
-.logo-images{
+#logo-images{
     display: flex;
     justify-content: space-between;
 }
+
 /*------------------------
  popular collection styles
 ------------------------ */
-.second-header{
+#popular-collection-header{
     font-family: 'Abril Fatface', cursive;
     font-family: 'Caveat', cursive;
     font-family: 'DM Serif Text', serif;
@@ -120,7 +126,7 @@ body{
     text-align: center;
     color: rgba(58, 58, 58, 1);
 }
-.popular-collections{
+#popular-collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
@@ -128,15 +134,20 @@ body{
     justify-content: center;
     padding: 10px;
 }
-.popular-collections img{
-    border-radius: 10px;
-}
 .popular-collection{
     align-items: center;
     box-shadow: 5px 7px 40px rgba(0, 0, 0, 0.10);
     border-radius: 10px;
     text-align: center;
     padding: 20px;
+    transition: transform 0.4s;
+}
+.popular-collection:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+.popular-collections img{
+    border-radius: 10px;
 }
 .product-name{
     font-family: 'Abril Fatface', cursive;
@@ -166,19 +177,6 @@ body{
     color: rgba(0, 0, 0, 0.87);
     margin: 10px;
 }
-.shipping-details{
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Caveat', cursive;
-    font-family: 'DM Serif Text', serif;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Love Light', cursive;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: rgba(120, 120, 133, 1);
-    margin-top: 10px;
-}
 .fas.fa-star{
     font-size: 10px;
     margin: 0px;
@@ -200,32 +198,75 @@ span{
     color: rgba(94, 99, 102, 1);
     margin-left: 8px;
 }
-.fas.fa-star span{
-    display: flex;
-    justify-content: center;
+.shipping-details{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'DM Serif Text', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Love Light', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgba(120, 120, 133, 1);
+    margin-top: 10px;
 }
-.second-link{
+#popular-collection-link{
     display: flex;
     justify-content: right;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgba(224, 44, 109, 0.87);
+    color: rgb(0, 166, 255);
     margin-top: 40px;
 }
 
+/*-----------------
+ payment part style
+ ----------------*/
+ #payment-part{
+     border-radius: 10px;
+     padding: 80px 40px;
+ }
+ #payment-part{
+     display: flex;
+     align-items: center;
+     background-color: rgba(0, 89, 255, 0.247);
+ }
+ #payment-part img{
+    height: 270px;
+    width: 400px;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+ #payment-part-header{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0px;
+ }
+ #payment-part-paragraph{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(0, 174, 255);
+ }
 
+/*-----------
+ footer style
+ ----------*/
 footer{
     padding: 50px;
     background-color: rgb(10, 7, 39);
 }
-.footer-influencer-products{
+#footer-header{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 1);
     margin: 0px;
-    
 }
-.footer-paragraph{
+#footer-paragraph{
     font-family: 'Abril Fatface', cursive;
     font-family: 'Caveat', cursive;
     font-family: 'DM Serif Text', serif;
@@ -234,18 +275,26 @@ footer{
     font-family: 'Manrope', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    color: rgb(179, 198, 255);
+    color: rgb(196, 210, 255);
     text-align: center;
-    font-weight: bold;
     font-size: 14px;
     margin-top: 0px;
 }
-.footer-links{
+#footer-links{
     text-align: center;
 }
-.footer-links a{
+#footer-links a{
     font-size: 20px;
     margin: 16px;
     padding: 3px;
     color: white;
+}
+.fa-facebook{
+    color: rgb(45, 98, 211);
+}
+.fa-twitter{
+    color: rgb(8, 160, 233);
+}
+.fa-youtube{
+    color: red;
 }
