@@ -1,10 +1,17 @@
-/* font styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/*----------
+ font styles
+ --------- */
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&family=DM+Serif+Text&family=Inter:wght@700&family=Love+Light&family=Open+Sans:wght@800&family=Poppins:wght@600&family=Roboto:wght@700&display=swap');
 
+/* poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /* inter font */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&family=DM+Serif+Text&family=Inter:wght@700&family=Love+Light&family=Open+Sans:wght@800&family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+
+/* manrope font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&family=DM+Serif+Text&family=Inter:wght@700&family=Love+Light&family=Manrope:wght@700&family=Open+Sans:wght@800&family=Poppins:wght@600&display=swap');
 
 /*------------------------- 
 influencer products & logos
@@ -128,10 +135,8 @@ body{
     align-items: center;
     box-shadow: 5px 7px 40px rgba(0, 0, 0, 0.10);
     border-radius: 10px;
-    padding: 20px;
-}
-.popular-collection-products{
     text-align: center;
+    padding: 20px;
 }
 .product-name{
     font-family: 'Abril Fatface', cursive;
@@ -160,7 +165,6 @@ body{
     font-size: 24px;
     color: rgba(0, 0, 0, 0.87);
     margin: 10px;
-
 }
 .shipping-details{
     font-family: 'Abril Fatface', cursive;
@@ -173,5 +177,75 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: rgba(120, 120, 133, 1);
+    margin-top: 10px;
+}
+.fas.fa-star{
+    font-size: 10px;
     margin: 0px;
+    color: rgba(251, 130, 0, 1)
+}
+span{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'DM Serif Text', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Love Light', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    Width: 29px;
+    Height: 22px;
+    color: rgba(94, 99, 102, 1);
+    margin-left: 8px;
+}
+.fas.fa-star span{
+    display: flex;
+    justify-content: center;
+}
+.second-link{
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(224, 44, 109, 0.87);
+    margin-top: 40px;
+}
+
+
+footer{
+    padding: 50px;
+    background-color: rgb(10, 7, 39);
+}
+.footer-influencer-products{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px;
+    
+}
+.footer-paragraph{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'DM Serif Text', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Love Light', cursive;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(179, 198, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links a{
+    font-size: 20px;
+    margin: 16px;
+    padding: 3px;
+    color: white;
 }
