@@ -250,7 +250,7 @@ span{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    color: rgb(0, 174, 255);
+    color: rgb(20, 180, 255);
  }
 
 /*-----------
@@ -297,4 +297,133 @@ footer{
 }
 .fa-youtube{
     color: red;
+}
+/*------------
+ Media Queries
+------------ */
+/*-------------
+ mobile devices
+ -------------*/
+ @media only screen and (max-width:688px) {
+     body{
+         margin: 0px;
+     }
+     .container{
+        width: 100%;
+        margin: 0px;
+    }
+    #header-container{
+        margin: 120px;
+    }
+    .links{
+        display: none;
+    }
+    #links-icon-one, #links-icon-two{
+        display: none;
+    }
+    .influencer-products{
+        text-align: center;
+        font-size: 40px;
+    }
+    #influencer{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #influencer{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    #logo-images{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    #popular-collections{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-collection{
+        padding-top: 40px;
+    }
+    #popular-collection-link{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    #payment-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin: 30px;
+    }
+    #payment-part img{
+        margin: 0px;
+        height: 202.5px;
+        width: 300px;
+    }
+    #payment-part{
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
+/*------------
+tablet devices 
+ ------------*/
+@media only screen and (min-width: 688px) and (max-width:
+992px){
+    body{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        margin: 0px;
+    }
+    #navigation-links{
+        display: inline;
+        align-items: center;
+    }
+    .links{
+        display: none;
+    }
+    #links-icon-one, #links-icon-two{
+        display: none;
+    }
+    .influencer-products{
+        text-align: center;
+        font-size: 40px;
+    }
+    #influencer{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    #popular-collections{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #popular-collection-link{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    #payment-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin: 30px;
+    }
+    #payment-part img{
+        margin: 0px;
+    }
+    #payment-part{
+        padding: 20px 10px;
+        text-align: center;
+    }
 }
